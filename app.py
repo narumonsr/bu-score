@@ -1103,6 +1103,29 @@ def show_certificate(project_id, scores, ws):
         })
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
+    # ปุ่มพิมพ์
+    st.markdown("""
+    <style>
+    @media print {
+        [data-testid="stSidebar"],
+        [data-testid="stToolbar"],
+        [data-testid="stDecoration"],
+        .stTabs [role="tablist"],
+        button { display: none !important; }
+        .main .block-container { padding: 0 !important; }
+    }
+    </style>
+    <div style="text-align:right;margin-top:16px;">
+        <button onclick="window.print()" style="
+            background:#1e40af;color:white;border:none;
+            padding:10px 24px;border-radius:8px;font-size:0.95em;
+            font-weight:600;cursor:pointer;
+            box-shadow:0 2px 6px rgba(30,64,175,0.4);">
+            🖨️ พิมพ์ / บันทึก PDF
+        </button>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 # ============================================================
 # MAIN
