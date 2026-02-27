@@ -1175,7 +1175,6 @@ def show_certificate(project_id, scores, ws):
 </tbody></table>
 <div class="footer">💡 {action} &nbsp;|&nbsp; bu-score-poc.streamlit.app</div>
 <button class="btn" onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button>
-<script>window.onload=function(){{setTimeout(function(){{window.print()}},600)}};</script>
 </body></html>"""
 
     html_b64 = base64.b64encode(print_html.encode("utf-8")).decode()
@@ -1191,11 +1190,11 @@ def show_certificate(project_id, scores, ws):
     </div>
     <script>
     function openPrint() {{
-        var html = atob("{html_b64}");
-        var w = window.open('', '_blank', 'width=900,height=750');
-        w.document.open();
-        w.document.write(html);
-        w.document.close();
+        var b64 = "{html_b64}";
+        var bytes = Uint8Array.from(atob(b64), function(c) {{ return c.charCodeAt(0); }});
+        var blob = new Blob([bytes], {{type: 'text/html;charset=utf-8'}});
+        var url = URL.createObjectURL(blob);
+        window.open(url, '_blank');
     }}
     </script>
     """, height=60)
