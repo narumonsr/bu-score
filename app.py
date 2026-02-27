@@ -1116,7 +1116,7 @@ def show_certificate(project_id, scores, ws):
     }
     </style>
     <div style="text-align:right;margin-top:16px;">
-        <button onclick="window.print()" style="
+        <button onclick="window.top.print()" style="
             background:#1e40af;color:white;border:none;
             padding:10px 24px;border-radius:8px;font-size:0.95em;
             font-weight:600;cursor:pointer;
