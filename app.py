@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 import json
 import ast
 import os
+import base64
 from datetime import datetime, timezone, timedelta
 
 # Base dir (รองรับทั้ง local และ cloud deploy)
@@ -1104,21 +1105,83 @@ def show_certificate(project_id, scores, ws):
         })
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
-    # ปุ่มพิมพ์
-    st.markdown("""
-    <style>
-    @media print {
-        [data-testid="stSidebar"],
-        [data-testid="stToolbar"],
-        [data-testid="stDecoration"],
-        .stTabs [role="tablist"] { display: none !important; }
-        .main .block-container { padding: 0 !important; }
-    }
-    </style>
-    """, unsafe_allow_html=True)
-    components.html("""
+    # ปุ่มพิมพ์ — เปิด popup หน้าเดียว แล้ว auto-print
+    rows_html = ""
+    for d in DIMENSIONS:
+        s = scores.get(d["id"])
+        score_str = f"{s}/5" if s is not None else "N/A"
+        level_txt = d["levels"][s] if s else "—"
+        bars = "".join([
+            f'<span style="display:inline-block;width:16px;height:9px;'
+            f'background:{"#1e40af" if i <= (s or 0) else "#e2e8f0"};'
+            f'border-radius:2px;margin-right:2px;"></span>'
+            for i in range(1, 6)
+        ]) if s else '<span style="color:#94a3b8">—</span>'
+        weighted = f"{(s or 0) * d['weight']:.3f}"
+        rows_html += (
+            f"<tr><td>{d['icon']} {d['en']} ({d['thai']})</td>"
+            f"<td style='text-align:center;font-weight:700'>{score_str}</td>"
+            f"<td>{bars}</td>"
+            f"<td style='text-align:center'>{int(d['weight']*100)}%</td>"
+            f"<td style='text-align:center'>{weighted}</td>"
+            f"<td style='font-size:9pt;color:#475569'>{level_txt}</td></tr>"
+        )
+
+    readiness_color = {"Advanced Ready":"#16a34a","Foundation Ready":"#d97706"}.get(label,"#dc2626")
+    print_html = f"""<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8">
+<title>BU Data Score — {project_id}</title>
+<style>
+  @page {{size:A4 portrait;margin:12mm 14mm}}
+  *{{box-sizing:border-box;margin:0;padding:0}}
+  body{{font-family:'Segoe UI',Arial,sans-serif;font-size:10.5pt;color:#1e293b;background:white}}
+  .hdr{{background:linear-gradient(135deg,#1e3a8a,#1e40af,#1d4ed8);color:white;
+        padding:18px 24px;border-radius:12px;text-align:center;margin-bottom:14px}}
+  .hdr .sub{{font-size:8pt;letter-spacing:4px;text-transform:uppercase;color:#bfdbfe}}
+  .hdr h1{{font-size:20pt;font-weight:900;letter-spacing:2px;margin:3px 0}}
+  .hdr .sc{{font-size:34pt;font-weight:900;margin:4px 0}}
+  .hdr .sc small{{font-size:13pt;color:#93c5fd}}
+  .badge{{display:inline-block;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.5);
+          border-radius:50px;padding:3px 18px;font-size:10pt;font-weight:700;margin:4px 0}}
+  .meta{{font-size:8.5pt;color:#bfdbfe;margin-top:6px}}
+  table{{width:100%;border-collapse:collapse;margin-top:4px;font-size:9.5pt}}
+  th{{background:#1e40af;color:white;padding:7px 9px;text-align:left}}
+  td{{padding:6px 9px;border-bottom:1px solid #e2e8f0;vertical-align:middle}}
+  tr:nth-child(even) td{{background:#f8fafc}}
+  .tot td{{background:#1e3a8a!important;color:white!important;font-weight:700;font-size:10.5pt}}
+  .footer{{margin-top:10px;text-align:center;font-size:8pt;color:#94a3b8;
+           border-top:1px solid #e2e8f0;padding-top:7px}}
+  .btn{{display:block;margin:14px auto 0;background:#1e40af;color:white;border:none;
+        padding:9px 28px;border-radius:8px;font-size:11pt;font-weight:600;cursor:pointer}}
+  @media print{{.btn{{display:none!important}}}}
+</style></head><body>
+<div class="hdr">
+  <div>🏆</div>
+  <div class="sub">AI Data Readiness Certificate</div>
+  <h1>BU DATA SCORE</h1>
+  <div class="sc">{ws:.2f}<small> / 5.00</small></div>
+  <div class="badge" style="color:white">{label} — {thai}</div>
+  <div class="meta">Project: <b style="color:white">{project_id}</b> &nbsp;|&nbsp;
+    ประเมิน: <b style="color:white">{scan_date}</b> &nbsp;|&nbsp;
+    มิติที่ประเมิน: <b style="color:white">{scored_dims}/8</b></div>
+</div>
+<table><thead><tr>
+  <th>มิติ</th><th style="text-align:center">คะแนน</th>
+  <th>ระดับ (Bar)</th><th style="text-align:center">Weight</th>
+  <th style="text-align:center">Weighted</th><th>ระดับคำอธิบาย</th>
+</tr></thead><tbody>
+{rows_html}
+<tr class="tot"><td colspan="4" style="text-align:right">🏆 BU Data Score รวม</td>
+  <td style="text-align:center">{ws:.3f}</td><td></td></tr>
+</tbody></table>
+<div class="footer">💡 {action} &nbsp;|&nbsp; bu-score-poc.streamlit.app</div>
+<button class="btn" onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button>
+<script>window.onload=function(){{setTimeout(function(){{window.print()}},600)}};</script>
+</body></html>"""
+
+    html_b64 = base64.b64encode(print_html.encode("utf-8")).decode()
+    components.html(f"""
     <div style="text-align:right;margin-top:4px;">
-        <button onclick="window.parent.print()" style="
+        <button onclick="openPrint()" style="
             background:#1e40af;color:white;border:none;
             padding:10px 24px;border-radius:8px;font-size:0.95em;
             font-weight:600;cursor:pointer;
@@ -1126,6 +1189,15 @@ def show_certificate(project_id, scores, ws):
             🖨️ พิมพ์ / บันทึก PDF
         </button>
     </div>
+    <script>
+    function openPrint() {{
+        var html = atob("{html_b64}");
+        var w = window.open('', '_blank', 'width=900,height=750');
+        w.document.open();
+        w.document.write(html);
+        w.document.close();
+    }}
+    </script>
     """, height=60)
 
 
