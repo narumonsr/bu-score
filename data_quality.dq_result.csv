@@ -1,0 +1,3226 @@
+data_quality_scan,data_source,data_quality_job_id,data_quality_job_configuration,job_labels,job_start_time,job_end_time,job_quality_result,job_dimension_result,job_rows_scanned,rule_name,rule_description,rule_type,rule_evaluation_type,rule_column,rule_dimension,rule_threshold_percent,rule_parameters,rule_passed,rule_rows_evaluated,rule_rows_passed,rule_rows_passed_percent,rule_rows_null,rule_failed_records_query,created_on,last_updated,rule_assertion_row_count,debug_queries
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",a9333546-39b7-4b3f-a9d7-13c3b195e04e,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-18 03:44:38.000000 UTC,2026-02-18 03:45:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70418802,Positive-value,Positive value only,Row Condition check,Per row,QTY,ACCURACY,100.0,"{""sql_expression"":""qty >= 0""}",false,70418802,69780860,99.094074,0,WITH `a9333546-39b7-4b3f-a9d7-13c3b195e04e` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `a9333546-39b7-4b3f-a9d7-13c3b195e04e` WHERE (NOT((qty >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-18 03:43:58.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",a9333546-39b7-4b3f-a9d7-13c3b195e04e,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-18 03:44:38.000000 UTC,2026-02-18 03:45:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70418802,Positive-value,Positive value only,Row Condition check,Per row,WGH,ACCURACY,100.0,"{""sql_expression"":""wgh >= 0""}",false,70418802,69391322,98.540901,0,WITH `a9333546-39b7-4b3f-a9d7-13c3b195e04e` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `a9333546-39b7-4b3f-a9d7-13c3b195e04e` WHERE (NOT((wgh >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-18 03:43:58.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",a9333546-39b7-4b3f-a9d7-13c3b195e04e,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-18 03:44:38.000000 UTC,2026-02-18 03:45:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70418802,Positive-value,Positive value only,Row Condition check,Per row,VAL,ACCURACY,100.0,"{""sql_expression"":""val >= 0""}",false,70418802,18685146,26.534314,0,WITH `a9333546-39b7-4b3f-a9d7-13c3b195e04e` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `a9333546-39b7-4b3f-a9d7-13c3b195e04e` WHERE (NOT((val >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-18 03:43:58.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",a9333546-39b7-4b3f-a9d7-13c3b195e04e,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-18 03:44:38.000000 UTC,2026-02-18 03:45:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70418802,Positive-value,Positive value only,Row Condition check,Per row,COST,ACCURACY,100.0,"{""sql_expression"":""cost >= 0""}",false,70418802,18685049,26.534176,0,WITH `a9333546-39b7-4b3f-a9d7-13c3b195e04e` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `a9333546-39b7-4b3f-a9d7-13c3b195e04e` WHERE (NOT((cost >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-18 03:43:58.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_HEADER""
+  }
+}",acf0c609-2417-4d91-b4c1-ac77f9719821,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-transaction-header""}",2026-02-24 06:28:22.000000 UTC,2026-02-24 06:28:55.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""true"",
+    ""score"": ""100.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":true,""score"":100}}",894681,,,Range check,Per row,FREIGHT_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,894681,894681,100.0,0,"WITH `acf0c609-2417-4d91-b4c1-ac77f9719821` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `acf0c609-2417-4d91-b4c1-ac77f9719821` WHERE (NOT(`FREIGHT_AMT` >= 0));",2026-02-24 06:27:44.000000 UTC,2026-02-24 06:27:44.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_HEADER""
+  }
+}",acf0c609-2417-4d91-b4c1-ac77f9719821,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-transaction-header""}",2026-02-24 06:28:22.000000 UTC,2026-02-24 06:28:55.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""true"",
+    ""score"": ""100.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":true,""score"":100}}",894681,,,Range check,Per row,GROSS_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,894681,894681,100.0,0,"WITH `acf0c609-2417-4d91-b4c1-ac77f9719821` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `acf0c609-2417-4d91-b4c1-ac77f9719821` WHERE (NOT((`GROSS_AMT` >= 0) IS TRUE));",2026-02-24 06:27:44.000000 UTC,2026-02-24 06:27:44.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_HEADER""
+  }
+}",acf0c609-2417-4d91-b4c1-ac77f9719821,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-transaction-header""}",2026-02-24 06:28:22.000000 UTC,2026-02-24 06:28:55.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""true"",
+    ""score"": ""100.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":true,""score"":100}}",894681,,,Range check,Per row,NET_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,894681,894681,100.0,0,"WITH `acf0c609-2417-4d91-b4c1-ac77f9719821` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `acf0c609-2417-4d91-b4c1-ac77f9719821` WHERE (NOT((`NET_AMT` >= 0) IS TRUE));",2026-02-24 06:27:44.000000 UTC,2026-02-24 06:27:44.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,AMOUNT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3175121,3175121,100.0,0,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT((`AMOUNT` >= 0) IS TRUE));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,FEMALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3175121,3175121,100.0,0,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT((`FEMALE_QTY` >= 0) IS TRUE));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,FREIGHT_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3175121,3175121,100.0,0,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT((`FREIGHT_AMT` >= 0) IS TRUE));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,MALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3175121,3175121,100.0,0,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT((`MALE_QTY` >= 0) IS TRUE));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,NET_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3175121,3175121,100.0,0,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT((`NET_AMT` >= 0) IS TRUE));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3175121,3175121,100.0,0,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT((`QTY` >= 0) IS TRUE));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-transfer-out-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-transfer-out-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_transfer_out_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_TRANSFER_OUT_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_TRANSFER_OUT_DETAIL""
+  }
+}",4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""transfer-out-transaction-deatil""}",2026-02-24 06:31:48.000000 UTC,2026-02-24 06:32:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""85.709999"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":85.71}}",3175121,,,Range check,Per row,WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,3175008,3174895,99.996441,113,"WITH `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_TRANSFER_OUT_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `4b3af74f-ae77-421b-9fd1-c0c7f94b7d6c` WHERE (NOT(`WGH` >= 0));",2026-02-24 06:31:13.000000 UTC,2026-02-24 06:32:06.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c5d02c38-6f9b-48d4-b477-05c0bb3f27bc,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:17:51.000000 UTC,2026-02-19 02:18:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(qty, 0) >= 0""}",false,70448770,69810828,99.09446,0,"WITH `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` WHERE (NOT((COALESCE(qty, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 02:17:19.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c5d02c38-6f9b-48d4-b477-05c0bb3f27bc,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:17:51.000000 UTC,2026-02-19 02:18:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,WGH,ACCURACY,100.0,"{""sql_expression"":""COALESCE(WGH) >= 0""}",false,70448770,69421290,98.541522,0,WITH `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` WHERE (NOT((COALESCE(WGH) >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-19 02:17:19.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c5d02c38-6f9b-48d4-b477-05c0bb3f27bc,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:17:51.000000 UTC,2026-02-19 02:18:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,VAL,ACCURACY,100.0,"{""sql_expression"":""COALESCE(VAL) >= 0""}",false,70448770,18703398,26.548935,0,WITH `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` WHERE (NOT((COALESCE(VAL) >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-19 02:17:19.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c5d02c38-6f9b-48d4-b477-05c0bb3f27bc,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:17:51.000000 UTC,2026-02-19 02:18:20.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,COST,ACCURACY,100.0,"{""sql_expression"":""COALESCE(COST) >= 0""}",false,70448770,18703301,26.548797,0,WITH `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c5d02c38-6f9b-48d4-b477-05c0bb3f27bc` WHERE (NOT((COALESCE(COST) >= 0) IS TRUE));,2026-02-18 03:43:58.000000 UTC,2026-02-19 02:17:19.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",35d30348-5b07-489b-8108-f6ca4bd6cc37,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:32:38.000000 UTC,2026-02-19 02:33:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(qty, 0) >= 0""}",false,70448770,69810828,99.09446,0,"WITH `35d30348-5b07-489b-8108-f6ca4bd6cc37` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `35d30348-5b07-489b-8108-f6ca4bd6cc37` WHERE (NOT((COALESCE(qty, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 02:32:08.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",35d30348-5b07-489b-8108-f6ca4bd6cc37,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:32:38.000000 UTC,2026-02-19 02:33:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,WGH,ACCURACY,100.0,"{""sql_expression"":""COALESCE(WGH, 0) >= 0""}",false,70448770,69421290,98.541522,0,"WITH `35d30348-5b07-489b-8108-f6ca4bd6cc37` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `35d30348-5b07-489b-8108-f6ca4bd6cc37` WHERE (NOT((COALESCE(WGH, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 02:32:08.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",35d30348-5b07-489b-8108-f6ca4bd6cc37,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:32:38.000000 UTC,2026-02-19 02:33:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,VAL,ACCURACY,100.0,"{""sql_expression"":""COALESCE(VAL, 0) >= 0""}",false,70448770,70434520,99.979773,0,"WITH `35d30348-5b07-489b-8108-f6ca4bd6cc37` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `35d30348-5b07-489b-8108-f6ca4bd6cc37` WHERE (NOT((COALESCE(VAL, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 02:32:08.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",35d30348-5b07-489b-8108-f6ca4bd6cc37,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 02:32:38.000000 UTC,2026-02-19 02:33:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,COST,ACCURACY,100.0,"{""sql_expression"":""COALESCE(COST, 0) >= 0""}",false,70448770,70434562,99.979832,0,"WITH `35d30348-5b07-489b-8108-f6ca4bd6cc37` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `35d30348-5b07-489b-8108-f6ca4bd6cc37` WHERE (NOT((COALESCE(COST, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 02:32:08.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c90f9b76-7989-4584-a0e0-a98ec1c39e92,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 08:49:18.000000 UTC,2026-02-19 08:49:46.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(qty, 0) >= 0""}",false,70448770,69810828,99.09446,0,"WITH `c90f9b76-7989-4584-a0e0-a98ec1c39e92` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c90f9b76-7989-4584-a0e0-a98ec1c39e92` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(qty, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 08:48:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c90f9b76-7989-4584-a0e0-a98ec1c39e92,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 08:49:18.000000 UTC,2026-02-19 08:49:46.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,WGH,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(WGH, 0) >= 0""}",false,70448770,69421290,98.541522,0,"WITH `c90f9b76-7989-4584-a0e0-a98ec1c39e92` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c90f9b76-7989-4584-a0e0-a98ec1c39e92` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(WGH, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 08:48:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c90f9b76-7989-4584-a0e0-a98ec1c39e92,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 08:49:18.000000 UTC,2026-02-19 08:49:46.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,VAL,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(VAL, 0) >= 0""}",false,70448770,70434520,99.979773,0,"WITH `c90f9b76-7989-4584-a0e0-a98ec1c39e92` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c90f9b76-7989-4584-a0e0-a98ec1c39e92` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(VAL, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 08:48:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-feed"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-feed"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_feed""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_FEED"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_FEED""
+  }
+}",c90f9b76-7989-4584-a0e0-a98ec1c39e92,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""feed-transaction""}",2026-02-19 08:49:18.000000 UTC,2026-02-19 08:49:46.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",70448770,Positive-value,Positive value only,Row Condition check,Per row,COST,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(COST, 0) >= 0""}",false,70448770,70434562,99.979832,0,"WITH `c90f9b76-7989-4584-a0e0-a98ec1c39e92` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_FEED` ) SELECT * FROM `c90f9b76-7989-4584-a0e0-a98ec1c39e92` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' AND COALESCE(COST, 0) >= 0) IS TRUE));",2026-02-18 03:43:58.000000 UTC,2026-02-19 08:48:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-breeder"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-breeder"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_breeder""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_BREEDER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_BREEDER""
+  }
+}",83b5b077-de5e-4e93-b669-7e9b45329f0f,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""breeder-transaction""}",2026-02-20 02:52:40.000000 UTC,2026-02-20 02:53:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",119856890,Positive-value,"Non‑cancel transactions must be positive, except Balance Forward (BF) transactions.",Row Condition check,Per row,WGH,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'\r\n  WHEN WGH < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'\r\n""}",false,119856890,119855957,99.999222,0,"WITH `83b5b077-de5e-4e93-b669-7e9b45329f0f` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_BREEDER` ) SELECT * FROM `83b5b077-de5e-4e93-b669-7e9b45329f0f` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'
+  WHEN WGH < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y'
+) IS TRUE));",2026-02-20 02:52:01.000000 UTC,2026-02-20 02:52:01.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-breeder"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-breeder"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_breeder""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_BREEDER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_BREEDER""
+  }
+}",83b5b077-de5e-4e93-b669-7e9b45329f0f,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""breeder-transaction""}",2026-02-20 02:52:40.000000 UTC,2026-02-20 02:53:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",119856890,Positive-value,"Non-cancel transactions must be positive, except Balance Forward (BF) transactions.",Row Condition check,Per row,QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'\r\n  WHEN QTY < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'""}",false,119856890,119856857,99.999972,0,"WITH `83b5b077-de5e-4e93-b669-7e9b45329f0f` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_BREEDER` ) SELECT * FROM `83b5b077-de5e-4e93-b669-7e9b45329f0f` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'
+  WHEN QTY < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y') IS TRUE));",2026-02-20 02:52:01.000000 UTC,2026-02-20 02:52:01.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-breeder"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-breeder"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_breeder""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_BREEDER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_BREEDER""
+  }
+}",83b5b077-de5e-4e93-b669-7e9b45329f0f,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""breeder-transaction""}",2026-02-20 02:52:40.000000 UTC,2026-02-20 02:53:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",119856890,Positive-value,"Non‑cancel transactions must be positive, except Balance Forward (BF) transactions.
+",Row Condition check,Per row,VAL,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'\r\n  WHEN VAL < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'\r\n""}",false,119856890,119856856,99.999972,0,"WITH `83b5b077-de5e-4e93-b669-7e9b45329f0f` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_BREEDER` ) SELECT * FROM `83b5b077-de5e-4e93-b669-7e9b45329f0f` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'
+  WHEN VAL < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y'
+) IS TRUE));",2026-02-20 02:52:01.000000 UTC,2026-02-20 02:52:01.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-breeder"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-breeder"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_breeder""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_BREEDER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_BREEDER""
+  }
+}",83b5b077-de5e-4e93-b669-7e9b45329f0f,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""breeder-transaction""}",2026-02-20 02:52:40.000000 UTC,2026-02-20 02:53:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",119856890,Positive-value,"Non‑cancel transactions must be positive, except Balance Forward (BF) transactions.",Row Condition check,Per row,MALE_QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'\r\n  WHEN MALE_QTY < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'""}",false,119856890,119856863,99.999977,0,"WITH `83b5b077-de5e-4e93-b669-7e9b45329f0f` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_BREEDER` ) SELECT * FROM `83b5b077-de5e-4e93-b669-7e9b45329f0f` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'
+  WHEN MALE_QTY < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y') IS TRUE));",2026-02-20 02:52:01.000000 UTC,2026-02-20 02:52:01.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-breeder"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-breeder"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_breeder""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_BREEDER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_BREEDER""
+  }
+}",83b5b077-de5e-4e93-b669-7e9b45329f0f,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""breeder-transaction""}",2026-02-20 02:52:40.000000 UTC,2026-02-20 02:53:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",119856890,Positive-value,"Non‑cancel transactions must be positive, except Balance Forward (BF) transactions.",Row Condition check,Per row,FEMALE_QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'\r\n  WHEN FEMALE_QTY < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'""}",false,119856890,119856881,99.999992,0,"WITH `83b5b077-de5e-4e93-b669-7e9b45329f0f` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_BREEDER` ) SELECT * FROM `83b5b077-de5e-4e93-b669-7e9b45329f0f` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'
+  WHEN FEMALE_QTY < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y') IS TRUE));",2026-02-20 02:52:01.000000 UTC,2026-02-20 02:52:01.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-trn-breeder"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-trn-breeder"",
+    ""display_name"": ""dq-pigpos-fr_ms_trn_breeder""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_TRN_BREEDER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_TRN_BREEDER""
+  }
+}",83b5b077-de5e-4e93-b669-7e9b45329f0f,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""breeder-transaction""}",2026-02-20 02:52:40.000000 UTC,2026-02-20 02:53:10.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",119856890,Positive-value,"Non‑cancel transactions must be positive, except Balance Forward (BF) transactions.",Row Condition check,Per row,COST,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'\r\n  WHEN COST < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'\r\n""}",false,119856890,119856887,99.999997,0,"WITH `83b5b077-de5e-4e93-b669-7e9b45329f0f` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_TRN_BREEDER` ) SELECT * FROM `83b5b077-de5e-4e93-b669-7e9b45329f0f` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN LEFT(DOCUMENT_NO, 2) = 'BF' THEN 'Y'
+  WHEN COST < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y'
+) IS TRUE));",2026-02-20 02:52:01.000000 UTC,2026-02-20 02:52:01.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,CULL_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`CULL_QTY` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,CULL_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`CULL_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,DEAD_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`DEAD_QTY` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,DEAD_SALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`DEAD_SALE_QTY` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,DEAD_SALE_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`DEAD_SALE_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,GOOD_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`GOOD_QTY` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,IN_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`IN_QTY` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,IN_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`IN_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,OUT_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,97052,97052,100.0,0,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`OUT_QTY` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,GOOD_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,97051,99.99897,1,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`GOOD_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,OUT_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,97051,99.99897,1,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`OUT_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,DEAD_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,97050,99.997939,2,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`DEAD_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_1,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_1` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_2,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_2` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_3,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_3` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_4,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_4` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_5,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_5` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_6,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_6` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_7,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_7` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH_PHASE_8,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96999,99.94539,53,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH_PHASE_8` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,ACT_ADG,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96921,99.865021,55,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`ACT_ADG` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,AVE_WGH_OUT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96997,99.943329,55,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`AVE_WGH_OUT` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,GAIN_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96816,99.756831,55,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`GAIN_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,ACT_FCR,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96802,99.742406,96,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`ACT_FCR` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-finisher-group"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-finisher-group"",
+    ""display_name"": ""dq-pigpos-fr_ms_finisher_group""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_FINISHER_GROUP"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_FINISHER_GROUP""
+  }
+}",494874ca-3097-45b7-8dfc-15b293115e73,"{""increment_column"":"""",""incremental"":false,""row_filter"":""FARM_ORG NOT LIKE '%TOTAL%'"",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-23 02:22:22.000000 UTC,2026-02-23 02:22:54.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""36.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":36}}",97052,,,Range check,Per row,FEED_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,97052,96932,99.876355,120,WITH `494874ca-3097-45b7-8dfc-15b293115e73` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_FINISHER_GROUP` WHERE (FARM_ORG NOT LIKE '%TOTAL%')) SELECT * FROM `494874ca-3097-45b7-8dfc-15b293115e73` WHERE (NOT((`FEED_WGH` >= 0) IS TRUE));,2026-02-20 03:17:26.000000 UTC,2026-02-23 02:21:41.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-outbound"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-outbound"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_outbound""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_OUTBOUND"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_OUTBOUND""
+  }
+}",3a5f6146-7c56-4064-9cae-b76bf85fbe62,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""outbound-transaction""}",2026-02-23 02:38:49.000000 UTC,2026-02-23 02:39:19.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",10321282,,,Row Condition check,Per row,QTY,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN QTY < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'\r\n""}",false,10321282,9998570,96.873334,0,"WITH `3a5f6146-7c56-4064-9cae-b76bf85fbe62` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_OUTBOUND` ) SELECT * FROM `3a5f6146-7c56-4064-9cae-b76bf85fbe62` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN QTY < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y'
+) IS TRUE));",2026-02-23 02:38:13.000000 UTC,2026-02-23 02:38:37.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-outbound"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-outbound"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_outbound""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_OUTBOUND"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_OUTBOUND""
+  }
+}",3a5f6146-7c56-4064-9cae-b76bf85fbe62,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""outbound-transaction""}",2026-02-23 02:38:49.000000 UTC,2026-02-23 02:39:19.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""0.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0}}",10321282,,,Row Condition check,Per row,WGH,ACCURACY,100.0,"{""sql_expression"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\nAND \r\nCASE \r\n  WHEN WGH < 0 THEN 'N'\r\n  ELSE 'Y'\r\nEND = 'Y'\r\n""}",false,10321282,9998456,96.87223,0,"WITH `3a5f6146-7c56-4064-9cae-b76bf85fbe62` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_OUTBOUND` ) SELECT * FROM `3a5f6146-7c56-4064-9cae-b76bf85fbe62` WHERE (NOT((COALESCE(CANCEL_FLAG, 'N') = 'N' 
+AND 
+CASE 
+  WHEN WGH < 0 THEN 'N'
+  ELSE 'Y'
+END = 'Y'
+) IS TRUE));",2026-02-23 02:38:13.000000 UTC,2026-02-23 02:38:37.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 07:11:56.000000 UTC,2026-02-23 07:12:27.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,NET_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,22354773,22354765,99.999964,0,"WITH `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` WHERE (NOT(`NET_AMT` >= 0));",2026-02-23 02:52:42.000000 UTC,2026-02-23 07:11:25.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 07:11:56.000000 UTC,2026-02-23 07:12:27.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` WHERE (NOT(`SALE_AMT` >= 0));",2026-02-23 02:52:42.000000 UTC,2026-02-23 07:11:25.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 07:11:56.000000 UTC,2026-02-23 07:12:27.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_FEMALE,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` WHERE (NOT(`SALE_FEMALE` >= 0));",2026-02-23 02:52:42.000000 UTC,2026-02-23 07:11:25.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 07:11:56.000000 UTC,2026-02-23 07:12:27.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_MALE,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` WHERE (NOT((`SALE_MALE` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 07:11:25.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 07:11:56.000000 UTC,2026-02-23 07:12:27.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` WHERE (NOT(`SALE_QTY` >= 0));",2026-02-23 02:52:42.000000 UTC,2026-02-23 07:11:25.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 07:11:56.000000 UTC,2026-02-23 07:12:27.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,22354773,22354454,99.998573,124,"WITH `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `f459d6f4-a7bb-4a5c-9c83-055ba7fe6d01` WHERE (NOT((`SALE_WGH` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 07:11:25.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,DISC_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,5164589,5162749,99.964373,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`DISC_AMT` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,DISC_AMT1,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,5164589,5163317,99.975371,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`DISC_AMT1` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,DISC_AMT2,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,5164589,5164589,100.0,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`DISC_AMT2` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,DISC_AMT3,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,5164589,5164589,100.0,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`DISC_AMT3` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,FREIGHT_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,5164589,5164589,100.0,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`FREIGHT_AMT` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,GROSS_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,5164589,5164589,100.0,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`GROSS_AMT` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,NET_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,5164589,5164589,100.0,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`NET_AMT` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-header"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-header"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_header""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_HEADER"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_HEADER""
+  }
+}",f0b5c159-18be-42fb-bd45-62680e44b66c,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N' \r\n"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-header""}",2026-02-23 02:45:35.000000 UTC,2026-02-23 02:46:04.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""75.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":75}}",5164589,,,Range check,Per row,VAT_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,5164589,5164589,100.0,0,"WITH `f0b5c159-18be-42fb-bd45-62680e44b66c` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_HEADER` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N' 
+)) SELECT * FROM `f0b5c159-18be-42fb-bd45-62680e44b66c` WHERE (NOT((`VAT_AMT` >= 0) IS TRUE));",2026-02-23 02:44:57.000000 UTC,2026-02-23 02:44:57.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,DISC_AMT1,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,22354773,22332231,99.899162,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`DISC_AMT1` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,DISC_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,22354773,22346879,99.964688,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`DISC_AMT` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,22354773,22354454,99.998573,124,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`SALE_WGH` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,NET_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,22354773,22354765,99.999964,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`NET_AMT` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,DISC_AMT2,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`DISC_AMT2` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,DISC_AMT3,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`DISC_AMT3` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,FREIGHT_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`FREIGHT_AMT` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`SALE_AMT` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_FEMALE,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`SALE_FEMALE` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_MALE,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`SALE_MALE` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,SALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`SALE_QTY` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-trn-sale-detail"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-trn-sale-detail"",
+    ""display_name"": ""dq-pigpos-fr_trn_sale_detail""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_TRN_SALE_DETAIL"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_TRN_SALE_DETAIL""
+  }
+}",7846b812-723a-4d9c-b482-d18fb7b38858,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""sale-transaction-detail""}",2026-02-23 02:53:19.000000 UTC,2026-02-23 02:53:49.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",22354773,,,Range check,Per row,VAT_AMT,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,22354773,22354773,100.0,0,"WITH `7846b812-723a-4d9c-b482-d18fb7b38858` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_TRN_SALE_DETAIL` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `7846b812-723a-4d9c-b482-d18fb7b38858` WHERE (NOT((`VAT_AMT` >= 0) IS TRUE));",2026-02-23 02:52:42.000000 UTC,2026-02-23 02:52:42.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-move"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-move"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_move""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_MOVE"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_MOVE""
+  }
+}",ba1361b1-152d-45e5-93b1-c3057902cd15,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""move-transaction""}",2026-02-23 07:23:30.000000 UTC,2026-02-23 07:23:59.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",3639381,,,Range check,Per row,FEMALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3639381,3639381,100.0,0,"WITH `ba1361b1-152d-45e5-93b1-c3057902cd15` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_MOVE` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `ba1361b1-152d-45e5-93b1-c3057902cd15` WHERE (NOT((`FEMALE_QTY` >= 0) IS TRUE));",2026-02-23 07:22:49.000000 UTC,2026-02-23 07:22:49.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-move"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-move"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_move""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_MOVE"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_MOVE""
+  }
+}",ba1361b1-152d-45e5-93b1-c3057902cd15,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""move-transaction""}",2026-02-23 07:23:30.000000 UTC,2026-02-23 07:23:59.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",3639381,,,Range check,Per row,MALE_QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3639381,3639381,100.0,0,"WITH `ba1361b1-152d-45e5-93b1-c3057902cd15` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_MOVE` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `ba1361b1-152d-45e5-93b1-c3057902cd15` WHERE (NOT((`MALE_QTY` >= 0) IS TRUE));",2026-02-23 07:22:49.000000 UTC,2026-02-23 07:22:49.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-move"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-move"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_move""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_MOVE"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_MOVE""
+  }
+}",ba1361b1-152d-45e5-93b1-c3057902cd15,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""move-transaction""}",2026-02-23 07:23:30.000000 UTC,2026-02-23 07:23:59.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",3639381,,,Range check,Per row,QTY,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3639381,3639381,100.0,0,"WITH `ba1361b1-152d-45e5-93b1-c3057902cd15` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_MOVE` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `ba1361b1-152d-45e5-93b1-c3057902cd15` WHERE (NOT((`QTY` >= 0) IS TRUE));",2026-02-23 07:22:49.000000 UTC,2026-02-23 07:22:49.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-move"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-move"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_move""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_MOVE"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_MOVE""
+  }
+}",ba1361b1-152d-45e5-93b1-c3057902cd15,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""move-transaction""}",2026-02-23 07:23:30.000000 UTC,2026-02-23 07:23:59.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",3639381,,,Range check,Per row,MALE_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",true,3638568,3638568,100.0,813,"WITH `ba1361b1-152d-45e5-93b1-c3057902cd15` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_MOVE` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `ba1361b1-152d-45e5-93b1-c3057902cd15` WHERE (NOT(`MALE_WGH` >= 0));",2026-02-23 07:22:49.000000 UTC,2026-02-23 07:22:49.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-move"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-move"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_move""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_MOVE"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_MOVE""
+  }
+}",ba1361b1-152d-45e5-93b1-c3057902cd15,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""move-transaction""}",2026-02-23 07:23:30.000000 UTC,2026-02-23 07:23:59.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",3639381,,,Range check,Per row,FEMALE_WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,3634771,3634770,99.999972,4610,"WITH `ba1361b1-152d-45e5-93b1-c3057902cd15` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_MOVE` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `ba1361b1-152d-45e5-93b1-c3057902cd15` WHERE (NOT(`FEMALE_WGH` >= 0));",2026-02-23 07:22:49.000000 UTC,2026-02-23 07:22:49.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-pigpos-fr-ms-swine-move"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-pigpos-fr-ms-swine-move"",
+    ""display_name"": ""dq-pigpos-fr_ms_swine_move""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/PIGPOS/tables/FR_MS_SWINE_MOVE"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""PIGPOS"",
+    ""table_id"": ""FR_MS_SWINE_MOVE""
+  }
+}",ba1361b1-152d-45e5-93b1-c3057902cd15,"{""increment_column"":"""",""incremental"":false,""row_filter"":""COALESCE(CANCEL_FLAG, 'N') = 'N'"",""sampling_percent"":100,""trigger"":""on_demand""}","{""content"":""move-transaction""}",2026-02-23 07:23:30.000000 UTC,2026-02-23 07:23:59.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""VALIDITY"":{""passed"":false,""score"":66.67}}",3639381,,,Range check,Per row,WGH,VALIDITY,100.0,"{""max_value"":"""",""min_value"":""0"",""strict_max_enabled"":false,""strict_min_enabled"":false}",false,3633958,3633957,99.999972,5423,"WITH `ba1361b1-152d-45e5-93b1-c3057902cd15` AS (SELECT * FROM `cpf-farm-th.PIGPOS.FR_MS_SWINE_MOVE` WHERE (COALESCE(CANCEL_FLAG, 'N') = 'N')) SELECT * FROM `ba1361b1-152d-45e5-93b1-c3057902cd15` WHERE (NOT(`WGH` >= 0));",2026-02-23 07:22:49.000000 UTC,2026-02-23 07:22:49.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",7bcded40-1570-4deb-9aca-50113076a2bc,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 05:14:55.000000 UTC,2026-02-12 05:15:22.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""true"",
+    ""score"": ""100.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,NULL check,Per row,PRODUCT_GROUP_6,COMPLETENESS,100.0,,true,432,432,100.0,0,WITH `7bcded40-1570-4deb-9aca-50113076a2bc` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `7bcded40-1570-4deb-9aca-50113076a2bc` WHERE (`PRODUCT_GROUP_6` IS NULL);,2026-02-12 05:14:16.000000 UTC,2026-02-12 05:14:16.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",7bcded40-1570-4deb-9aca-50113076a2bc,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 05:14:55.000000 UTC,2026-02-12 05:15:22.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""true"",
+    ""score"": ""100.0"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,Uniqueness check,Per row,PRODUCT_GROUP_6,UNIQUENESS,0.0,,true,432,432,100.0,0,WITH `7bcded40-1570-4deb-9aca-50113076a2bc` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `7bcded40-1570-4deb-9aca-50113076a2bc` WHERE `PRODUCT_GROUP_6` IN (SELECT `PRODUCT_GROUP_6` FROM `7bcded40-1570-4deb-9aca-50113076a2bc` GROUP BY `PRODUCT_GROUP_6` HAVING COUNT(`PRODUCT_GROUP_6`) > 1);,2026-02-12 05:14:16.000000 UTC,2026-02-12 05:14:16.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",74b02370-b77d-47f8-9db0-9143972ee651,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 05:21:26.000000 UTC,2026-02-12 05:21:53.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,NULL check,Per row,PRODUCT_GROUP_6,COMPLETENESS,100.0,,true,432,432,100.0,0,WITH `74b02370-b77d-47f8-9db0-9143972ee651` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `74b02370-b77d-47f8-9db0-9143972ee651` WHERE (`PRODUCT_GROUP_6` IS NULL);,2026-02-12 05:14:16.000000 UTC,2026-02-12 05:20:37.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",74b02370-b77d-47f8-9db0-9143972ee651,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 05:21:26.000000 UTC,2026-02-12 05:21:53.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,Uniqueness check,Per row,PRODUCT_GROUP_6,UNIQUENESS,0.0,,true,432,432,100.0,0,WITH `74b02370-b77d-47f8-9db0-9143972ee651` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `74b02370-b77d-47f8-9db0-9143972ee651` WHERE `PRODUCT_GROUP_6` IN (SELECT `PRODUCT_GROUP_6` FROM `74b02370-b77d-47f8-9db0-9143972ee651` GROUP BY `PRODUCT_GROUP_6` HAVING COUNT(`PRODUCT_GROUP_6`) > 1);,2026-02-12 05:14:16.000000 UTC,2026-02-12 05:20:37.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",74b02370-b77d-47f8-9db0-9143972ee651,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 05:21:26.000000 UTC,2026-02-12 05:21:53.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,SQL Assertion check,Aggregate,PRODUCT_GROUP_6,ACCURACY,0.0,"{""sql_statement"":""SELECT count(*) FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` WHERE PRODUCT_GROUP_6 = '351'""}",false,0,0,0.0,0,"-- This query executes the SQL expression defined by the rule.
+WITH `74b02370-b77d-47f8-9db0-9143972ee651` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) (SELECT count(*) FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` WHERE PRODUCT_GROUP_6 = '351');",2026-02-12 05:14:16.000000 UTC,2026-02-12 05:20:37.000000 UTC,1,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",4c4a0dfe-a060-4fa9-b873-7b29bf201e0c,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 07:06:01.000000 UTC,2026-02-12 07:06:30.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,NULL check,Per row,PRODUCT_GROUP_6,COMPLETENESS,100.0,,true,432,432,100.0,0,WITH `4c4a0dfe-a060-4fa9-b873-7b29bf201e0c` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `4c4a0dfe-a060-4fa9-b873-7b29bf201e0c` WHERE (`PRODUCT_GROUP_6` IS NULL);,2026-02-12 05:14:16.000000 UTC,2026-02-12 07:05:30.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",4c4a0dfe-a060-4fa9-b873-7b29bf201e0c,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 07:06:01.000000 UTC,2026-02-12 07:06:30.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,Uniqueness check,Per row,PRODUCT_GROUP_6,UNIQUENESS,0.0,,true,432,432,100.0,0,WITH `4c4a0dfe-a060-4fa9-b873-7b29bf201e0c` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `4c4a0dfe-a060-4fa9-b873-7b29bf201e0c` WHERE `PRODUCT_GROUP_6` IN (SELECT `PRODUCT_GROUP_6` FROM `4c4a0dfe-a060-4fa9-b873-7b29bf201e0c` GROUP BY `PRODUCT_GROUP_6` HAVING COUNT(`PRODUCT_GROUP_6`) > 1);,2026-02-12 05:14:16.000000 UTC,2026-02-12 07:05:30.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6-test"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6-test"",
+    ""display_name"": ""dq-std-mas-sap-product-group-6-test""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",4c4a0dfe-a060-4fa9-b873-7b29bf201e0c,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 07:06:01.000000 UTC,2026-02-12 07:06:30.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""66.669998"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":true,""score"":100},""UNIQUENESS"":{""passed"":true,""score"":100}}",432,,,SQL Assertion check,Aggregate,PRODUCT_GROUP_6,ACCURACY,0.0,"{""sql_statement"":""SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` WHERE PRODUCT_GROUP_6 = '351'""}",false,0,0,0.0,0,"-- This query executes the SQL expression defined by the rule.
+WITH `4c4a0dfe-a060-4fa9-b873-7b29bf201e0c` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` WHERE PRODUCT_GROUP_6 = '351');",2026-02-12 05:14:16.000000 UTC,2026-02-12 07:05:30.000000 UTC,1,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6"",
+    ""display_name"": ""dq-std-mas_sap_product_group_6""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",921628be-a1b1-4206-8064-f7b375dd3f38,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 08:32:13.000000 UTC,2026-02-12 08:32:42.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""33.330002"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":false,""score"":0},""VALIDITY"":{""passed"":true,""score"":100}}",432,,,SQL Assertion check,Aggregate,PRODUCT_GROUP_6,ACCURACY,0.0,"{""sql_statement"":""SELECT PRODUCT_GROUP_6 FROM cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6 WHERE PRODUCT_GROUP_6 = '351'""}",false,0,0,0.0,0,"-- This query executes the SQL expression defined by the rule.
+WITH `921628be-a1b1-4206-8064-f7b375dd3f38` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) (SELECT PRODUCT_GROUP_6 FROM cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6 WHERE PRODUCT_GROUP_6 = '351');",2026-02-12 08:31:37.000000 UTC,2026-02-12 08:31:37.000000 UTC,1,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6"",
+    ""display_name"": ""dq-std-mas_sap_product_group_6""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",921628be-a1b1-4206-8064-f7b375dd3f38,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 08:32:13.000000 UTC,2026-02-12 08:32:42.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""33.330002"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":false,""score"":0},""VALIDITY"":{""passed"":true,""score"":100}}",432,,,Row Condition check,Per row,PRODUCT_GROUP_6,VALIDITY,100.0,"{""sql_expression"":""(LENGTH(`PRODUCT_GROUP_6`) >= 2 AND LENGTH(`PRODUCT_GROUP_6`) <= 5) OR `PRODUCT_GROUP_6` IS NULL""}",true,432,432,100.0,0,WITH `921628be-a1b1-4206-8064-f7b375dd3f38` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `921628be-a1b1-4206-8064-f7b375dd3f38` WHERE (NOT(((LENGTH(`PRODUCT_GROUP_6`) >= 2 AND LENGTH(`PRODUCT_GROUP_6`) <= 5) OR `PRODUCT_GROUP_6` IS NULL) IS TRUE));,2026-02-12 08:31:37.000000 UTC,2026-02-12 08:31:37.000000 UTC,,"{
+  ""debug_queries"": []
+}"
+"{
+  ""data_quality_scan"": {
+    ""resource_name"": ""//dataplex.googleapis.com/projects/1082519457323/locations/us-central1/dataScans/dq-std-mas-sap-product-group-6"",
+    ""project_id"": ""cpf-farm-th"",
+    ""location"": ""us-central1"",
+    ""data_scan_id"": ""dq-std-mas-sap-product-group-6"",
+    ""display_name"": ""dq-std-mas_sap_product_group_6""
+  }
+}","{
+  ""data_source"": {
+    ""resource_name"": ""//bigquery.googleapis.com/projects/cpf-farm-th/datasets/STD/tables/MAS_SAP_PRODUCT_GROUP_6"",
+    ""dataplex_entity_project_id"": null,
+    ""dataplex_entity_project_number"": null,
+    ""dataplex_lake_id"": null,
+    ""dataplex_zone_id"": null,
+    ""dataplex_entity_id"": null,
+    ""table_project_id"": ""cpf-farm-th"",
+    ""table_project_number"": ""1082519457323"",
+    ""dataset_id"": ""STD"",
+    ""table_id"": ""MAS_SAP_PRODUCT_GROUP_6""
+  }
+}",921628be-a1b1-4206-8064-f7b375dd3f38,"{""increment_column"":"""",""incremental"":false,""row_filter"":"""",""sampling_percent"":100,""trigger"":""on_demand""}",,2026-02-12 08:32:13.000000 UTC,2026-02-12 08:32:42.000000 UTC,"{
+  ""job_quality_result"": {
+    ""passed"": ""false"",
+    ""score"": ""33.330002"",
+    ""incremental_start"": null,
+    ""incremental_end"": null
+  }
+}","{""ACCURACY"":{""passed"":false,""score"":0},""COMPLETENESS"":{""passed"":false,""score"":0},""VALIDITY"":{""passed"":true,""score"":100}}",432,,,NULL check,Per row,DESC_ENG,COMPLETENESS,100.0,,false,432,298,68.981481,134,WITH `921628be-a1b1-4206-8064-f7b375dd3f38` AS (SELECT * FROM `cpf-farm-th.STD.MAS_SAP_PRODUCT_GROUP_6` ) SELECT * FROM `921628be-a1b1-4206-8064-f7b375dd3f38` WHERE (`DESC_ENG` IS NULL);,2026-02-12 08:31:37.000000 UTC,2026-02-12 08:31:37.000000 UTC,,"{
+  ""debug_queries"": []
+}"

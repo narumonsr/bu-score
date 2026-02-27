@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)",
+      "Bash(python -m py_compile \"D:/COE/BU Score/app.py\")"
+    ]
+  }
+}
