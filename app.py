@@ -136,19 +136,8 @@ def sidebar_oauth_section():
     # ยังไม่ได้ login — แสดงปุ่ม
     flow = _make_flow(cfg)
     auth_url, _ = flow.authorization_url(access_type="offline", prompt="consent")
-    st.markdown(f"""
-    <a href="{auth_url}" target="_self" style="
-        display:block;background:#4285f4;color:white;text-align:center;
-        padding:11px;border-radius:8px;text-decoration:none;
-        font-weight:700;font-size:0.9em;margin:6px 0;
-        box-shadow:0 2px 6px rgba(66,133,244,0.4);">
-        <img src="https://www.google.com/favicon.ico" width="16"
-             style="vertical-align:middle;margin-right:8px;">
-        Login with Google
-    </a>
-    <div style="color:#64748b;font-size:0.78em;text-align:center;margin-top:4px;">
-        ใช้ Google account เดียวกับที่เข้า BigQuery
-    </div>""", unsafe_allow_html=True)
+    st.link_button("🔵 Login with Google", auth_url, use_container_width=True)
+    st.caption("ใช้ Google account เดียวกับที่เข้า BigQuery")
     return None, None
 
 # ============================================================
