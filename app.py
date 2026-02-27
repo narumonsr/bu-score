@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import plotly.graph_objects as go
 import json
@@ -1110,13 +1111,14 @@ def show_certificate(project_id, scores, ws):
         [data-testid="stSidebar"],
         [data-testid="stToolbar"],
         [data-testid="stDecoration"],
-        .stTabs [role="tablist"],
-        button { display: none !important; }
+        .stTabs [role="tablist"] { display: none !important; }
         .main .block-container { padding: 0 !important; }
     }
     </style>
-    <div style="text-align:right;margin-top:16px;">
-        <button onclick="window.top.print()" style="
+    """, unsafe_allow_html=True)
+    components.html("""
+    <div style="text-align:right;margin-top:4px;">
+        <button onclick="window.parent.print()" style="
             background:#1e40af;color:white;border:none;
             padding:10px 24px;border-radius:8px;font-size:0.95em;
             font-weight:600;cursor:pointer;
@@ -1124,7 +1126,7 @@ def show_certificate(project_id, scores, ws):
             🖨️ พิมพ์ / บันทึก PDF
         </button>
     </div>
-    """, unsafe_allow_html=True)
+    """, height=60)
 
 
 # ============================================================
