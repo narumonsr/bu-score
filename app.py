@@ -136,7 +136,24 @@ def sidebar_oauth_section():
     # ยังไม่ได้ login — แสดงปุ่ม
     flow = _make_flow(cfg)
     auth_url, _ = flow.authorization_url(access_type="offline", prompt="consent")
-    st.link_button("🔵 Login with Google", auth_url, use_container_width=True)
+    st.markdown("""
+    <style>
+    div[data-testid="stLinkButton"] a {
+        background-color: #4285F4 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        font-size: 0.9em !important;
+        box-shadow: 0 2px 6px rgba(66,133,244,0.4) !important;
+    }
+    div[data-testid="stLinkButton"] a:hover {
+        background-color: #3367D6 !important;
+        box-shadow: 0 4px 10px rgba(66,133,244,0.5) !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    st.link_button("🔵 Sign in with Google", auth_url, use_container_width=True)
     st.caption("ใช้ Google account เดียวกับที่เข้า BigQuery")
     return None, None
 
