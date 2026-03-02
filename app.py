@@ -54,12 +54,20 @@ def handle_oauth_callback() -> bool:
     """ดักจับ ?code=... จาก Google แล้วแลก token — เรียกก่อน render ทุกครั้ง"""
     if "code" not in st.query_params:
         return False
+    # ถ้า login แล้วอยู่แล้ว → ล้าง code ออกเฉยๆ ไม่ต้อง fetch ซ้ำ
+    if st.session_state.get("_oauth_creds"):
+        st.query_params.clear()
+        return False
     cfg = _oauth_config()
     if not cfg:
+        st.query_params.clear()
         return False
+    code = st.query_params.get("code", "")
+    # ล้าง query params ก่อนเลย เพื่อกันไม่ให้ rerun ใช้ code ซ้ำ
+    st.query_params.clear()
     try:
         flow = _make_flow(cfg)
-        flow.fetch_token(code=st.query_params["code"])
+        flow.fetch_token(code=code)
         creds = flow.credentials
         st.session_state["_oauth_creds"] = {
             "token":         creds.token,
@@ -80,10 +88,11 @@ def handle_oauth_callback() -> bool:
             info = r.json()
             st.session_state["_oauth_email"] = info.get("email", "")
             st.session_state["_oauth_name"]  = info.get("name", "")
-        st.query_params.clear()
         return True
     except Exception as e:
-        st.error(f"❌ Google login ล้มเหลว: {e}")
+        st.warning(f"⚠️ Session หมดอายุ กรุณา Login ใหม่อีกครั้ง ({e})")
+        for k in ["_oauth_creds", "_oauth_email", "_oauth_name"]:
+            st.session_state.pop(k, None)
         return False
 
 
