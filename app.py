@@ -67,6 +67,10 @@ def handle_oauth_callback() -> bool:
     st.query_params.clear()
     try:
         flow = _make_flow(cfg)
+        # คืน code_verifier (PKCE) ให้ flow ถ้ามี
+        code_verifier = st.session_state.pop("_oauth_code_verifier", None)
+        if code_verifier:
+            flow.code_verifier = code_verifier
         flow.fetch_token(code=code)
         creds = flow.credentials
         st.session_state["_oauth_creds"] = {
@@ -146,7 +150,11 @@ def sidebar_oauth_section():
 
     # ยังไม่ได้ login — แสดงปุ่ม
     flow = _make_flow(cfg)
-    auth_url, _ = flow.authorization_url(access_type="offline", prompt="consent")
+    auth_url, state = flow.authorization_url(access_type="offline", prompt="consent")
+    # เก็บ code_verifier (PKCE) ไว้ใน session เผื่อ library ใช้ PKCE อัตโนมัติ
+    st.session_state["_oauth_state"] = state
+    if getattr(flow, "code_verifier", None):
+        st.session_state["_oauth_code_verifier"] = flow.code_verifier
     st.markdown("""
     <style>
     div[data-testid="stLinkButton"] a {
