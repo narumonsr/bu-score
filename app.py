@@ -421,8 +421,15 @@ def inject_css():
         border-radius: 10px;
         padding: 12px 16px;
     }
-    div[data-testid="stMetricValue"] { color: #1e40af !important; font-weight: 700 !important; }
-    div[data-testid="stMetricLabel"] { color: #64748b !important; }
+    div[data-testid="stMetricValue"] {
+        color: #1e40af !important;
+        font-weight: 700 !important;
+        font-size: 1.15rem !important;
+        word-break: break-all !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+    }
+    div[data-testid="stMetricLabel"] { color: #64748b !important; font-size: 0.8rem !important; }
 
     /* Expander */
     .streamlit-expanderHeader { color: #1e293b !important; }
@@ -1013,10 +1020,12 @@ def panel_sufficient(dim: dict, tables_df: pd.DataFrame, client) -> int:
                     months = result["history_months"]
                     months_text = f"{months} เดือน" if months < 24 else f"{months//12} ปี {months%12} เดือน"
                     rc1, rc2, rc3, rc4 = st.columns(4)
+                    oldest_str = str(result["oldest_date"])[:10]
+                    newest_str = str(result["newest_date"])[:10]
                     rc1.metric("Total Rows", f"{result['total_rows']:,}")
                     rc2.metric("ช่วงเวลา", months_text)
-                    rc3.metric("ข้อมูลเก่าสุด", result["oldest_date"])
-                    rc4.metric("ข้อมูลใหม่สุด", result["newest_date"])
+                    rc3.metric("ข้อมูลเก่าสุด", oldest_str)
+                    rc4.metric("ข้อมูลใหม่สุด", newest_str)
                     sug = result["suggested_score"]
                     c = score_color(sug)
                     st.markdown(f"""
