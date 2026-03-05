@@ -1034,6 +1034,7 @@ def panel_sufficient(dim: dict, tables_df: pd.DataFrame, client) -> int:
                         <span style="color:#64748b;font-size:0.85em;">ปรับได้จาก slider ด้านล่าง</span>
                     </div>""", unsafe_allow_html=True)
                     st.session_state[key_score] = sug
+                    st.session_state["slider_sufficient"] = sug   # sync slider ด้วย
                     current = sug
                 else:
                     st.error(f"❌ Query ล้มเหลว: {result['error']}")
