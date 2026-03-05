@@ -6,6 +6,9 @@ import json
 import ast
 import os
 import base64
+import hashlib
+import secrets
+from urllib.parse import urlencode
 from datetime import datetime, timezone, timedelta
 
 # Base dir (รองรับทั้ง local และ cloud deploy)
@@ -50,11 +53,40 @@ def _make_flow(cfg: dict):
     )
 
 
+def _pkce_pair():
+    """สร้าง code_verifier และ code_challenge (S256)"""
+    verifier = secrets.token_urlsafe(48)
+    challenge = base64.urlsafe_b64encode(
+        hashlib.sha256(verifier.encode()).digest()
+    ).rstrip(b"=").decode()
+    return verifier, challenge
+
+
+def _build_auth_url(cfg: dict) -> tuple[str, str]:
+    """สร้าง auth URL พร้อม PKCE — คืน (auth_url, code_verifier)"""
+    verifier, challenge = _pkce_pair()
+    # ฝัง verifier ใน state เพื่อให้ Google ส่งกลับมา (รอดพ้น session reset)
+    state = base64.urlsafe_b64encode(
+        json.dumps({"cv": verifier, "n": secrets.token_hex(6)}).encode()
+    ).decode()
+    params = {
+        "client_id":             cfg["client_id"],
+        "redirect_uri":          cfg["redirect_uri"],
+        "response_type":         "code",
+        "scope":                 " ".join(OAUTH_SCOPES),
+        "access_type":           "offline",
+        "prompt":                "consent",
+        "state":                 state,
+        "code_challenge":        challenge,
+        "code_challenge_method": "S256",
+    }
+    return f"https://accounts.google.com/o/oauth2/auth?{urlencode(params)}", verifier
+
+
 def handle_oauth_callback() -> bool:
     """ดักจับ ?code=... จาก Google แล้วแลก token — เรียกก่อน render ทุกครั้ง"""
     if "code" not in st.query_params:
         return False
-    # ถ้า login แล้วอยู่แล้ว → ล้าง code ออกเฉยๆ ไม่ต้อง fetch ซ้ำ
     if st.session_state.get("_oauth_creds"):
         st.query_params.clear()
         return False
@@ -62,42 +94,56 @@ def handle_oauth_callback() -> bool:
     if not cfg:
         st.query_params.clear()
         return False
-    code = st.query_params.get("code", "")
-    # ล้าง query params ก่อนเลย เพื่อกันไม่ให้ rerun ใช้ code ซ้ำ
+
+    code  = st.query_params.get("code", "")
+    state = st.query_params.get("state", "")
     st.query_params.clear()
+
+    # ดึง code_verifier จาก state ที่ฝังไว้
+    code_verifier = None
     try:
-        flow = _make_flow(cfg)
-        # คืน code_verifier (PKCE) ให้ flow ถ้ามี
-        code_verifier = st.session_state.pop("_oauth_code_verifier", None)
-        if code_verifier:
-            flow.code_verifier = code_verifier
-        flow.fetch_token(code=code)
-        creds = flow.credentials
-        st.session_state["_oauth_creds"] = {
-            "token":         creds.token,
-            "refresh_token": creds.refresh_token,
-            "token_uri":     creds.token_uri,
-            "client_id":     creds.client_id,
-            "client_secret": creds.client_secret,
-            "scopes":        list(creds.scopes or OAUTH_SCOPES),
-        }
-        # ดึง email ผู้ใช้
+        state_data = json.loads(base64.urlsafe_b64decode(state + "==").decode())
+        code_verifier = state_data.get("cv")
+    except Exception:
+        pass
+
+    try:
         import requests as _req
-        r = _req.get(
+        data = {
+            "code":          code,
+            "client_id":     cfg["client_id"],
+            "client_secret": cfg["client_secret"],
+            "redirect_uri":  cfg["redirect_uri"],
+            "grant_type":    "authorization_code",
+        }
+        if code_verifier:
+            data["code_verifier"] = code_verifier
+        r = _req.post("https://oauth2.googleapis.com/token", data=data, timeout=10)
+        r.raise_for_status()
+        token = r.json()
+        st.session_state["_oauth_creds"] = {
+            "token":         token["access_token"],
+            "refresh_token": token.get("refresh_token"),
+            "token_uri":     "https://oauth2.googleapis.com/token",
+            "client_id":     cfg["client_id"],
+            "client_secret": cfg["client_secret"],
+            "scopes":        OAUTH_SCOPES,
+        }
+        # ดึง email
+        ui = _req.get(
             "https://www.googleapis.com/oauth2/v1/userinfo",
-            headers={"Authorization": f"Bearer {creds.token}"},
+            headers={"Authorization": f"Bearer {token['access_token']}"},
             timeout=5,
         )
-        if r.ok:
-            info = r.json()
+        if ui.ok:
+            info = ui.json()
             st.session_state["_oauth_email"] = info.get("email", "")
             st.session_state["_oauth_name"]  = info.get("name", "")
-        # ล้าง auth URL เพื่อให้สร้างใหม่ครั้งหน้า
         st.session_state.pop("_oauth_auth_url", None)
         return True
     except Exception as e:
-        st.warning(f"⚠️ Session หมดอายุ กรุณา Login ใหม่อีกครั้ง ({e})")
-        for k in ["_oauth_creds", "_oauth_email", "_oauth_name"]:
+        st.warning(f"⚠️ Login ล้มเหลว กรุณาลองใหม่ ({e})")
+        for k in ["_oauth_creds", "_oauth_email", "_oauth_name", "_oauth_auth_url"]:
             st.session_state.pop(k, None)
         return False
 
@@ -151,14 +197,10 @@ def sidebar_oauth_section():
             st.rerun()
         return creds, email
 
-    # ยังไม่ได้ login — สร้าง auth URL ครั้งเดียวต่อ session (ป้องกัน code_verifier เปลี่ยนทุก rerun)
+    # ยังไม่ได้ login — สร้าง auth URL (PKCE ฝังใน state ไม่ต้องพึ่ง session_state)
     if "_oauth_auth_url" not in st.session_state:
-        flow = _make_flow(cfg)
-        auth_url, state = flow.authorization_url(access_type="offline", prompt="consent")
+        auth_url, _ = _build_auth_url(cfg)
         st.session_state["_oauth_auth_url"] = auth_url
-        st.session_state["_oauth_state"] = state
-        if getattr(flow, "code_verifier", None):
-            st.session_state["_oauth_code_verifier"] = flow.code_verifier
     auth_url = st.session_state["_oauth_auth_url"]
     st.markdown("""
     <style>
