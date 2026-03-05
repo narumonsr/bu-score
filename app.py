@@ -959,7 +959,10 @@ def panel_sufficient(dim: dict, tables_df: pd.DataFrame, client) -> int:
     key_score = "score_sufficient"
     if key_score not in st.session_state:
         st.session_state[key_score] = 3
-    current = st.session_state[key_score]
+    # init slider key แยกต่างหาก เพื่อหลีกเลี่ยง conflict กับ value parameter
+    if "slider_sufficient" not in st.session_state:
+        st.session_state["slider_sufficient"] = st.session_state[key_score]
+    current = st.session_state["slider_sufficient"]
     mode_label = "🟡 Semi-Auto (ระบุ date column)" if client else "✏️ Demo — ประเมินด้วยตนเอง"
     mode_color = "#d97706" if client else "#7c3aed"
 
@@ -1046,7 +1049,7 @@ def panel_sufficient(dim: dict, tables_df: pd.DataFrame, client) -> int:
         st.divider()
         show_rubric(dim["levels"], current)
         score = st.slider("เลือกระดับ Sufficient", min_value=1, max_value=5,
-                          value=current, key="slider_sufficient")
+                          key="slider_sufficient")   # ไม่ใส่ value= เพื่อหลีกเลี่ยง conflict กับ Session State
         st.session_state[key_score] = score
         c = score_color(score)
         st.markdown(f"""
