@@ -1329,11 +1329,8 @@ def main():
                         st.success("✅ อัปโหลดสำเร็จ")
 
         st.divider()
-        st.markdown("**🔎 Filter (optional)**")
-        ds_filter = st.text_input("Dataset", placeholder="เช่น PIGPOS")
-        tbl_filter = st.text_input("Table", placeholder="เช่น FR_MS_TRN_FEED")
-
-        st.divider()
+        ds_filter = None
+        tbl_filter = None
         load_btn = st.button("📡 โหลดข้อมูลจาก BigQuery", use_container_width=True, type="primary")
         calc_btn = st.button("🚀 แสดงผล BU Score", use_container_width=True, type="primary")
 
