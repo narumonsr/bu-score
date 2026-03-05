@@ -1322,7 +1322,6 @@ def main():
 
         st.divider()
         load_btn = st.button("📡 โหลดข้อมูลจาก BigQuery", use_container_width=True, type="primary")
-        demo_btn = st.button("🧪 Demo Mode (CSV)", use_container_width=True)
         calc_btn = st.button("🚀 แสดงผล BU Score", use_container_width=True, type="primary")
 
         st.divider()
@@ -1363,16 +1362,6 @@ def main():
                         st.success(f"✅ โหลดสำเร็จ — {len(df):,} rules ({who})")
                     except Exception as e:
                         st.error(f"❌ {e}")
-
-    if demo_btn:
-        try:
-            df = pd.read_csv(os.path.join(BASE_DIR, "data_quality.dq_result.csv"), encoding="utf-8-sig")
-            st.session_state["df"] = df
-            st.session_state["client"] = None
-            st.session_state["project"] = "cpf-farm-th (Demo)"
-            st.success(f"✅ โหลด Demo — {len(df):,} rules")
-        except Exception as e:
-            st.error(f"ไม่พบไฟล์ CSV: {e}")
 
     df = st.session_state.get("df")
     client = st.session_state.get("client")
