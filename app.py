@@ -388,18 +388,30 @@ def inject_css():
 
     /* Buttons */
     .stButton > button[kind="primary"] {
-        background: #1e40af !important;
-        color: white !important;
+        background: #3b82f6 !important;
+        color: #ffffff !important;
         border: none !important;
         border-radius: 8px !important;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
+        font-size: 0.95em !important;
+        letter-spacing: 0.01em !important;
+        box-shadow: 0 2px 6px rgba(59,130,246,0.35) !important;
+    }
+    .stButton > button[kind="primary"]:hover {
+        background: #2563eb !important;
+        box-shadow: 0 4px 10px rgba(59,130,246,0.45) !important;
     }
     .stButton > button[kind="secondary"] {
-        background: #ffffff !important;
-        color: #1e40af !important;
-        border: 1px solid #1e40af !important;
+        background: #eff6ff !important;
+        color: #1d4ed8 !important;
+        border: 1.5px solid #93c5fd !important;
         border-radius: 8px !important;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
+        font-size: 0.95em !important;
+    }
+    .stButton > button[kind="secondary"]:hover {
+        background: #dbeafe !important;
+        border-color: #3b82f6 !important;
     }
 
     /* Metrics */
