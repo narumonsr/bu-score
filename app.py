@@ -92,6 +92,8 @@ def handle_oauth_callback() -> bool:
             info = r.json()
             st.session_state["_oauth_email"] = info.get("email", "")
             st.session_state["_oauth_name"]  = info.get("name", "")
+        # ล้าง auth URL เพื่อให้สร้างใหม่ครั้งหน้า
+        st.session_state.pop("_oauth_auth_url", None)
         return True
     except Exception as e:
         st.warning(f"⚠️ Session หมดอายุ กรุณา Login ใหม่อีกครั้ง ({e})")
@@ -143,18 +145,21 @@ def sidebar_oauth_section():
             <div style="font-size:0.82em;color:#166534;margin-top:2px;">👤 {name or email}</div>
         </div>""", unsafe_allow_html=True)
         if st.button("🚪 Logout", key="oauth_logout", use_container_width=True):
-            for k in ["_oauth_creds","_oauth_email","_oauth_name","df","client","project","scores"]:
+            for k in ["_oauth_creds","_oauth_email","_oauth_name","_oauth_auth_url",
+                      "_oauth_state","_oauth_code_verifier","df","client","project","scores"]:
                 st.session_state.pop(k, None)
             st.rerun()
         return creds, email
 
-    # ยังไม่ได้ login — แสดงปุ่ม
-    flow = _make_flow(cfg)
-    auth_url, state = flow.authorization_url(access_type="offline", prompt="consent")
-    # เก็บ code_verifier (PKCE) ไว้ใน session เผื่อ library ใช้ PKCE อัตโนมัติ
-    st.session_state["_oauth_state"] = state
-    if getattr(flow, "code_verifier", None):
-        st.session_state["_oauth_code_verifier"] = flow.code_verifier
+    # ยังไม่ได้ login — สร้าง auth URL ครั้งเดียวต่อ session (ป้องกัน code_verifier เปลี่ยนทุก rerun)
+    if "_oauth_auth_url" not in st.session_state:
+        flow = _make_flow(cfg)
+        auth_url, state = flow.authorization_url(access_type="offline", prompt="consent")
+        st.session_state["_oauth_auth_url"] = auth_url
+        st.session_state["_oauth_state"] = state
+        if getattr(flow, "code_verifier", None):
+            st.session_state["_oauth_code_verifier"] = flow.code_verifier
+    auth_url = st.session_state["_oauth_auth_url"]
     st.markdown("""
     <style>
     div[data-testid="stLinkButton"] a {
